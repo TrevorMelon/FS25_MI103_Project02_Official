@@ -9,12 +9,12 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
-    { 
+    {
         float horizontal = 0.0f;
         float vertical = 0.0f;
         if (Keyboard.current.leftArrowKey.isPressed)
@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour
             vertical = -1.0f;
         }
         else if (Keyboard.current.upArrowKey.isPressed)
-        {  vertical = 1.0f;
+        {
+            vertical = 1.0f;
         }
         {
             Debug.Log(horizontal);
@@ -47,5 +48,6 @@ public class PlayerController : MonoBehaviour
 
 
     }
-}
+ 
 
+}
